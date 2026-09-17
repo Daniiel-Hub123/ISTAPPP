@@ -20,7 +20,8 @@
 5. [Requisitos del Sistema](#-requisitos-del-sistema)
 6. [Instalación y Configuración](#-instalación-y-configuración)
 7. [Gestión de Anexos PDF](#-gestión-de-anexos-pdf)
-8. [Contribución y Soporte](#-contribución-y-soporte)
+8. [Autores y Desarrollo](#-autores-y-desarrollo)
+9. [Institución y Licencia](#-institución-y-licencia)
 
 ---
 
@@ -127,8 +128,15 @@ La app incluye el paquete completo de documentación requerida por el reglamento
 
 ---
 
-## 👤 Institución y Licencia
+## 👨‍💻 Autores y Desarrollo
+
+* **Desarrollador Principal:** **Daniel Barros** ([@Daniiel-Hub123](https://github.com/Daniiel-Hub123))
+
+---
+
+## 🏛️ Institución y Licencia
 
 Desarrollado para la comunidad del **Instituto Superior Tecnológico Azuay (ISTA)**.
 
-* **Repositorio:** [Daniiel-Hub123/ISTAPPP](https://github.com/Daniiel-Hub123/ISTAPPP)
+* **Repositorio Oficial:** [Daniiel-Hub123/ISTAPPP](https://github.com/Daniiel-Hub123/ISTAPPP)
+
