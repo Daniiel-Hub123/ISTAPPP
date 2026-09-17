@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conslay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardconvocatoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            app:cardUseCompatPadding="true"
+
+
+            app:cardMaxElevation="10dp"
+            app:cardPreventCornerOverlap="false"
+
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="78dp"
+                android:layout_height="73dp"
+                android:layout_gravity="left|start|center"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/alerta" />
+
+            <TextView
+                android:id="@+id/txtnombrecon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="5dp"
+
+                android:text="Nombre"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtsiglascon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="SiglasCarrera"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtfechacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Fecha"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:background="@drawable/style_txt"
+                android:id="@+id/btnaplicarcon"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end|center"
+                android:layout_margin="20dp"
+
+                android:text=""
+                app:icon="@android:drawable/ic_dialog_info" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

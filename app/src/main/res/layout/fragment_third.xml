@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutprocess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThirdFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardproceso"
+        android:layout_width="340dp"
+        android:layout_height="498dp"
+        android:layout_gravity=""
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="92dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+
+
+        app:cardMaxElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/button_third"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="78dp"
+            android:layout_height="73dp"
+            android:layout_gravity="top|center"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/app_name"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:src="@mipmap/practicas" />
+
+        <TextView
+            android:id="@+id/titlenombrepro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp"
+            android:text="Nombre:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtnombrepro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="90dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/titlecedulapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-70dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="20dp"
+            android:text="Cédula:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtcedulapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-70dp"
+            android:layout_marginBottom="20dp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/titlecarrerapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="5dp"
+            android:text="Carrera:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/txtcarrerapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginBottom="5dp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtmensaje"
+            android:layout_width="231dp"
+            android:layout_height="339dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="En este momento, no presenta procesos activos, aplique el proceso de postulación de prácticas mediante la pestaña de convocatorias."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/titlefechapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="80dp"
+            android:text="Fecha:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtfechapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-15dp"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/titleresponsablepro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Responsable de Prácticas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtresponsablepro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleempresapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="115dp"
+            android:text="Titulo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtempresapro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="155dp"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/barra"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:progressBackgroundTint="#FAC02E"
+            android:progressTint="#FAC02E" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_third"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

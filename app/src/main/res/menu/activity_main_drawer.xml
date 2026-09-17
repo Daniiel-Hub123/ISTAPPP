@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/casa"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/libro"
+            android:title="Información de Carreras" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@mipmap/usuario"
+            android:title="Acceder al Sistema" />
+
+
+    </group>
+
+    <item android:title="Anexos y Documentos">
+        <menu >
+            <group >
+
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@mipmap/educacion"
+                    android:title="Inicio" />
+                <item
+                    android:id="@+id/nav_faseinicio"
+                    android:icon="@mipmap/educacion"
+                    android:title="Designación y Planificación" />
+                <item
+                    android:id="@+id/nav_fasedesarrollo"
+                    android:icon="@mipmap/educacion"
+                    android:title="Desarrollo" />
+                <item
+                    android:id="@+id/nav_fasefinal"
+                    android:icon="@mipmap/educacion"
+                    android:title="Final" />
+
+            </group>
+        </menu>
+    </item>
+</menu>

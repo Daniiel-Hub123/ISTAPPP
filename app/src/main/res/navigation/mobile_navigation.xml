@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.g2c2.istappp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.g2c2.istappp.ui.gallery.GalleryFragment"
+        android:label=""
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.g2c2.istappp.ui.slideshow.SlideshowFragment"
+        android:label=""
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_faseinicio"
+        android:name="com.g2c2.istappp.fragment_anexosu"
+        android:label=""
+        tools:layout="@layout/fragment_anexosu" />
+
+    <fragment
+        android:id="@+id/nav_fasedesarrollo"
+        android:name="com.g2c2.istappp.DesarrolloFragment"
+        android:label=""
+        tools:layout="@layout/desarrollo_fragment" />
+
+
+    <fragment
+        android:id="@+id/nav_fasefinal"
+        android:name="com.g2c2.istappp.FinalFragment"
+        android:label=""
+        tools:layout="@layout/final_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.g2c2.istappp.login.LoginFragment"
+        android:label=""
+        tools:layout="@layout/login_fragment"/>
+
+
+
+</navigation>

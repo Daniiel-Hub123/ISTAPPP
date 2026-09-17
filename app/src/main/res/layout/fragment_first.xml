@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sishome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment" >
+
+    <TextView
+        android:id="@+id/titulo21"
+        android:layout_width="299dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Bienvenido al aplicativo de prácticas preprofesionales del Instituto Superior Tecnológico del Azuay"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo22"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Carrera:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/titulo24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo24"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Perfil:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcarrera"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="68dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Estudiante"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/titulo22"
+        app:layout_constraintTop_toBottomOf="@+id/titulo21" />
+
+    <TextView
+        android:id="@+id/txtcodcarrera"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="160dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/titulo24" />
+
+    <ImageView
+        android:id="@+id/logoIsta3"
+        android:layout_width="230dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/titulo21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.742"
+        app:srcCompat="@mipmap/ista" />
+
+    <Button
+        android:id="@+id/buttonFirst"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        app:icon="?attr/actionModePasteDrawable"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTres"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="80dp"
+        app:icon="@android:drawable/ic_menu_manage"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonexitlogin"
+        android:layout_width="63dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="148dp"
+        app:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

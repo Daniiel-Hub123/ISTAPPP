@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mostrarcarrer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TextView
+        android:id="@+id/txtactividades"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="31dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|top"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actividades" />
+
+    <TextView
+        android:id="@+id/actividades"
+        android:layout_width="228dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Actividades a Realizarse:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/txtactividades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encargcar" />
+
+    <TextView
+        android:id="@+id/encargcar"
+        android:layout_width="119dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|right"
+        android:text="Encargado:"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/actividades"
+        app:layout_constraintEnd_toStartOf="@+id/editTextencarg"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coordcar" />
+
+    <TextView
+        android:id="@+id/coordcar"
+        android:layout_width="113dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Coordinador:"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/encargcar"
+        app:layout_constraintEnd_toStartOf="@+id/editTextcoord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripcion" />
+
+    <TextView
+        android:id="@+id/txtdescripcion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center|top"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/coordcar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulocarrera" />
+
+    <EditText
+        android:id="@+id/editxtCarrera"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:inputType="textPersonName"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnbuscar"
+        app:layout_constraintEnd_toStartOf="@+id/btnbuscar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cartitlebuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnbuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="INFORMACION DE CARRERAS" />
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="65dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="#FAC02E"
+        android:gravity="center_horizontal|top"
+        android:textAlignment="center"
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/fotocarrera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editxtCarrera"
+        app:layout_constraintTop_toBottomOf="@+id/cartitlebuscar" />
+
+    <ImageView
+        android:id="@+id/fotocarrera"
+        android:layout_width="256dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="17dp"
+        android:src="@mipmap/educacion"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/titulocarrera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbuscar" />
+
+    <TextView
+
+        android:id="@+id/titulocarrera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtdescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fotocarrera" />
+
+    <TextView
+        android:id="@+id/editTextcoord"
+        android:layout_width="225dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="99dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtactividades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coordcar"
+        app:layout_constraintTop_toTopOf="@+id/txtdescripcion"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/editTextencarg"
+        android:layout_width="236dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:gravity="bottom|center|right|left"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/actividades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/encargcar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcoord"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
